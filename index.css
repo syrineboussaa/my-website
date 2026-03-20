@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, #1f2933, #0f172a);
+    color: #e5e7eb;
+}
+
+header {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(
+        135deg,
+        rgba(221,36,118,0.9),
+        rgba(255,81,47,0.9)
+    ),
+    url("BRICS91.jpg") center / cover no-repeat;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    animation: slideDown 1.2s ease;
+}
+
+header p {
+    font-size: 1.4rem;
+    max-width: 700px;
+    animation: fadeIn 2s ease;
+}
+.header-img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgba(17,24,39,0.9);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #f9fafb;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    transform: translateY(-3px);
+}
+
+
+section {
+    padding: 60px 10%;
+    animation: fadeInUp 1.2s ease;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    color: #ff9a9e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+table {
+    margin: 40px auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #111827;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #374151;
+}
+
+td a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    color: #f472b6;
+}
+
+footer {
+    background: linear-gradient(90deg, #f9fafb, #e5e7eb);
+    color: #111827;
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+footer a {
+    color: #dd2476;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 40px 6%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
+

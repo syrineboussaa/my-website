@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: #222;
+}
+
+header {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background-color: #111827;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff512f;
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    gap: 25px;
+    padding: 30px;
+}
+
+section {
+    flex: 3;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease;
+}
+
+section h2 {
+    color: #dd2476;
+    margin-bottom: 15px;
+}
+
+section p {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover td {
+    background-color: #fce7f3;
+}
+
+aside {
+    flex: 1;
+    background: linear-gradient(180deg, #f9fafb, #e5e7eb);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+aside h3 {
+    text-align: center;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+aside p {
+    text-align: center;
+    margin: 8px 0;
+    font-weight: bold;
+    color: #374151;
+}
+
+footer {
+    background-color: #111827;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ff9a9e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
